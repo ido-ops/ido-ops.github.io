@@ -1,0 +1,45 @@
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard {
+    width: 20%;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    height: 100vh;
+}
+
+.dashboard a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.dashboard a:hover {
+    background-color: #444;
+}
+
+/* General container styling for main content */
+.content, .booking-details-section, .booking-status-container, .booking-history-container {
+    max-width: 90%; /* Make container wider */
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    background-color: #fff; /* Set a consistent background color */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+

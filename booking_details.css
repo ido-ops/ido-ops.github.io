@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.dashboard {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.dashboard h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.dashboard a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.dashboard a:hover {
+    background-color: #495057;
+}
+
+.container {
+    margin-left: 600px; /* Increase the margin to push the container further away from the navigation */
+    padding: 40px;
+    max-width: 1000px; /* Increase width to accommodate two columns */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-details-section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%; /* Adjust to make the panel wider */
+    max-width: 1500px; /* Optional: set a maximum width */
+    margin: 0 auto; /* Center the panel */
+}
+
+.booking-details-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+.booking-details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.booking-details-table th, .booking-details-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.booking-details-table th {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.booking-details-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#map {
+    height: 500px; /* Increased height for better visibility */
+    width: 100%; /* Full width of the panel */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Adds margin around the map */
+}

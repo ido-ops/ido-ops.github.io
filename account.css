@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.dashboard {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.dashboard h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.dashboard a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.dashboard a:hover {
+    background-color: #495057;
+}
+
+.container {
+    margin-left: 600px; /* Increase the margin to push the container further away from the navigation */
+    padding: 40px;
+    max-width: 1000px; /* Increase width to accommodate two columns */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo img {
+    border-radius: 50%; /* This makes the image circular */
+    width: 150px; /* You can adjust the size */
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #343a40; /* Optional: add a border around the photo */
+}
+
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1 1 45%; /* Adjust to make it two columns */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group.full-width {
+    flex: 1 1 100%; /* Full width for buttons or fields that should span both columns */
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.form-group img {
+    display: block;
+    max-width: 100%;
+    margin-top: 10px;
+}

@@ -1,0 +1,710 @@
+/* Base Styles */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    color: #333; /* Dark color for readability */
+    font-size: 1.5rem; /* Consistent font size for h3 */
+    font-weight: 600; /* Bold for emphasis */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    text-transform: uppercase; /* Optional: uppercase for uniformity */
+    text-align: center; /* Center align for uniform look */
+    letter-spacing: 0.5px; /* Subtle letter spacing */
+    line-height: 1.4; /* Increase line height for readability */
+}
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;  /* Increased padding for a more spacious header */
+    color: rgb(0, 0, 0);
+    z-index: 1000; /* Ensure the header is on top of other content */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly softer shadow on hover */
+}
+
+.header.header-scrolled {
+    background-color: rgba(3, 10, 42, 0.8); /* Semi-transparent black */
+    box-shadow: 0 4px 8px rgba(3, 12, 78, 0.2); /* Optional: shadow for better visibility */
+    color: white;
+
+    .header-button {
+        color: #ffffff;
+    }
+
+    .header-button.active {
+        color: #054cff; /* Example active color */
+        font-weight: bold;
+        background-color: white;
+        transform: translateY(-3px); /* Lift button on hover */
+    }
+    .header-button:hover {  
+        transform: translateY(-3px); /* Lift button on hover */
+        color:#054cff;
+        background-color:  #ffffff;
+    }
+    
+}
+
+/* Active button style */
+.header-button.active {
+    color: #054cff; /* Example active color */
+    font-weight: bold;
+    transform: translateY(-3px); /* Lift button on hover */
+}
+
+.logo img {
+    height: 60px;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+    height: 40px;
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
+
+.header-navigation {
+    display: flex;
+    gap: 15px;
+}
+
+.header-button {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-right: 30px;
+}
+
+.header-button:hover {  
+    transform: translateY(-3px); /* Lift button on hover */
+    color:#054cff;
+    background-color:  #ffffff;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .landing-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .persuasive-text {
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .persuasive-text h2 {
+        font-size: 2.5em; /* Adjust heading size for smaller screens */
+    }
+    
+    .persuasive-text p {
+        font-size: 1.2em; /* Adjust text size for readability */
+    }
+    
+    .btn-rent, .btn-book {
+        padding: 15px 30px;
+        font-size: 1em;
+        margin-right: 10px;
+    }
+}
+
+/* Home Section */
+#home {
+    background-image: url('images/bg1.jpg'); /* Replace with the actual path to your image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+    height: 100vh; /* Full viewport height */
+    position: relative; /* Allows for positioning of other elements */
+    color: rgb(12, 6, 6); /* White text for contrast */
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: flex-start; /* Align content to the left */
+    padding-left: 50px; /* Adds space on the left */
+    text-align: left; /* Left-align the text */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}   
+
+/* Home Content Styling */
+.home-content {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+    max-width: 800px;
+}
+
+.home-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.home-content .btn-rent {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+}
+
+/* Get Started Button */
+.get-started-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #000c28; /* Primary color */
+    color: #ffffff; /* White text for contrast */
+    font-size: 1.2rem; /* Larger text for visibility */
+    font-weight: 600; /* Slightly bolder text */
+    border: none;
+    border-radius: 50px; /* Rounded edges for modern design */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+/* Hover Effect */
+.get-started-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-5px); /* Lift the button slightly */
+    box-shadow: 0 6px 15px rgba(0, 86, 179, 0.3); /* Stronger shadow on hover */
+}
+
+/* Focus Effect */
+.get-started-btn:focus {
+    outline: none; /* Remove default focus outline */
+    background-color: #0056b3; /* Keep the same background as hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Softer shadow on hover */
+}
+
+/* About Us Section */
+#about-us {
+    padding: 80px 40px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+#about-us:hover{
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px   rgba(0, 0, 0, 0.15); /* Softer shadow on hover */
+}
+
+.about-us-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#about-us h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#about-us p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 30px;
+    font-family: Helvetica, Arial, sans-serif; 
+    text-align: justify;
+}
+
+#about-us .highlight {
+    color: #007bff; /* Primary color highlight */
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    #about-us h2 {
+        font-size: 30px;
+    }
+
+    #about-us p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #about-us h2 {
+        font-size: 26px;
+    }
+
+    #about-us p {
+        font-size: 14px;
+    }
+}
+
+#values {
+    padding: 80px 40px;
+    margin-bottom: 30px;
+    background: #b8ffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+.values-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.values-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    
+}
+
+.values-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.value-item {
+    flex: 1 1 200px;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    padding: 20px;
+    text-align: center;
+}
+
+.value-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.value-item p {
+    margin-top: 25px;
+    font-size: 1em;
+    color: #555;
+    font-family: Helvetica, Arial, sans-serif; 
+    line-height: 25px;
+    
+}
+
+.value-item:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Softer shadow on hover */
+}
+
+.value-logo {
+    width: 50px; /* Larger logo */
+    height: 55px; /* Larger logo */
+    transition: transform 0.3s ease;
+}
+
+.value-item:hover .value-logo {
+    transform: scale(1.1); /* Slight zoom effect on logo */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .values-grid {
+        grid-template-columns: 1fr; /* Full width for smaller screens */
+    }
+
+    .value-item {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .values-container h2 {
+        font-size: 2em;
+    }
+    
+    .value-logo {
+        width: 50px; /* Slightly smaller for very small screens */
+        height: 50px;
+    }
+    
+    .value-item h3 {
+        font-size: 1.2em;
+    }
+    
+    .value-item p {
+        font-size: 0.9em;
+    }
+}
+
+
+
+/* Our Cars Section */
+#our-cars {
+    padding: 80px 40px;
+    background-color: #f5f5f5;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); /* Softer shadow */
+}
+
+#our-cars h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.cars-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(4, auto); /* 4 rows */
+    gap: 15px; /* Spacing between items */
+    padding: 0 10px;
+}
+
+.car-item {
+    background-color: rgb(245, 245, 245);
+    padding: 10px;
+    border-radius: 8px;
+    height: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    text-align: center;
+    position: relative; /* Required for absolute positioning of the info container */
+    overflow: hidden; /* Hide overflow to keep the info container within bounds */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.car-item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Softer shadow on hover */
+}
+
+.car-item img {
+    width: 100%; /* Fit the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    transition: transform 0.4s ease, filter 0.4s ease; /* Smooth zoom and filter effect */
+}
+
+.car-item img:hover {
+    transform: scale(1.1); /* Slightly larger zoom effect */
+    filter: brightness(80%); /* Slightly darken the image on hover */
+}
+
+.car-info {
+    position: absolute; /* Position it relative to the car-item */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly darker for more contrast */
+    color: white;
+    padding: 20px;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(100%); /* Hide below the container */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth transition */
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Shadow to add depth */
+}
+
+.car-item:hover .car-info {
+    opacity: 1; /* Show on hover */
+    transform: translateY(0); /* Slide up into view */
+}
+
+/* Our Drivers Section */
+#our-drivers {
+    padding: 80px 50px;
+    text-align: center;
+    background: linear-gradient(153deg, rgba(229,248,255,1) 33%, rgba(181,181,181,1) 61%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); /* Softer shadow */
+}
+
+#our-drivers h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.drivers-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0px;
+    justify-items: center;
+}
+
+.driver-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    text-align: center;
+    max-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.driver-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Softer shadow on hover */
+}
+
+.driver-item img {
+    width: 100%;
+    border-radius: 10%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.driver-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.driver-info p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* For filled stars */
+.rating .material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    font-size: 1.5em;
+    color: gold;
+}
+
+
+#customer-feedback {
+    padding: 80px 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); /* Softer shadow */
+}
+
+.feedback-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feedback-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+
+.feedback-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feedback-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feedback-item img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.feedback-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feedback-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.feedback-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Softer shadow on hover */
+}
+
+/* Contact Us Section */
+#contact-us {
+    position: relative;
+    overflow: hidden;
+    padding: 70px 40px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); /* Softer shadow */
+    background-image:url('images/bg2.jpg');
+}
+
+.contact-container {
+    position: relative;
+    z-index: 1; /* Ensure it's above the background image */
+    background: rgba(255, 255, 255, 0.5); /* White background for the contact box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    
+}
+
+.contact-content {
+    text-align: center;
+}
+
+.contact-content h2 {
+    font-size: 2.5rem; /* Larger heading */
+    margin-bottom: 20px;
+    color: #333; /* Dark text for better readability */
+    font-weight: 600; /* Bold heading */
+}
+
+.contact-content p {
+    font-size: 1.1rem; /* Slightly larger text */
+    margin-bottom: 30px;
+    color: #666; /* Darker grey for contrast */
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-item {
+    background: #fff; /* White background for contact items */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color:#333;
+}
+.contact-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}
+
+.contact-item i {
+    font-size: 2.5rem; /* Larger icons */
+    color: #007bff; /* Brand color */
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.contact-item:hover i {
+    color: #0056b3; /* Darker color on hover */
+}
+
+.contact-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333; /* Dark text for headings */
+    font-weight: 500;
+}
+
+.contact-item p {
+    font-size: 1rem;
+    color: #080808; /* Dark grey text for details */
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Footer Section */
+#footer {
+    background-color: #002244; /* Very dark blue for a dramatic look */
+    color: #d0d0d0; /* Light gray text for readability */
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 0; /* Ensure margin-top is zero for consistency */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff; /* White text for better contrast */
+}
+
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    color: #d0d0d0; /* Light gray for social icons */
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #ffffff; /* White color on hover for better visibility */
+}
+
+.footer-bottom {
+    font-size: 0.875rem;
+    border-top: 1px solid #003366; /* Match border color with hover background */
+    padding-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+

@@ -1,0 +1,112 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+#login-section, #signup-section {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5; /* Slightly lighter background for a softer look */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Darker text color for better readability */
+}
+
+#login-section, #signup-section {
+    max-width: 500px; /* Increased width for a more spacious layout */
+    margin: 100px auto;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow for a more modern feel */
+    border-radius: 12px; /* Rounded corners for a softer look */
+    border: 1px solid #ddd; /* Light border for subtle definition */
+}
+
+h2 {
+    font-size: 28px; /* Larger font size for a bolder header */
+    margin-bottom: 20px;
+    color: #333; /* Darker header color for contrast */
+}
+
+form input {
+    width: 100%;
+    padding: 12px; /* Slightly more padding for a more comfortable input field */
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Slightly darker border for better visibility */
+    border-radius: 8px; /* Rounded corners for input fields */
+    font-size: 16px; /* Larger font size for better readability */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+form input:focus {
+    border-color: #007bff; /* Blue border on focus for a modern touch */
+    outline: none; /* Remove default outline */
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Consistent rounded corners with input fields */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.error {
+    color: #e74c3c; /* Red color for errors to stand out */
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    font-size: 14px;
+    font-weight: 500; /* Slightly bolder font for emphasis */
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+

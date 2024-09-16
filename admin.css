@@ -1,0 +1,152 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Dashboard menu */
+.dashboard {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.dashboard a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.dashboard a:hover {
+    text-decoration: underline;
+}
+
+/* Tables */
+h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td a {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Status message */
+p {
+    padding: 10px;
+    font-size: 14px;
+}
+
+#calendar {
+    max-width: 800px; /* Adjust calendar width */
+    margin: 0 auto; /* Center the calendar */
+    padding: 20px; /* Add padding */
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Calendar Header */
+.fc-toolbar-title {
+    font-size: 1.5rem; /* Make the title larger */
+    color: #333; /* Darker title text */
+    font-weight: 500;
+}
+
+/* Calendar Day Grid */
+.fc-daygrid-day {
+    font-size: 0.85rem; /* Smaller day text */
+}
+
+/* Calendar Events */
+.fc-event {
+    background-color: #4CAF50; /* Green background for events */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded event corners */
+    color: white; /* White text on events */
+    font-size: 0.8rem; /* Smaller font for events */
+    padding: 2px 4px; /* Padding inside events */
+}
+
+/* Event hover effect */
+.fc-event:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+/* Calendar navigation buttons */
+.fc-button {
+    background-color: #007bff; /* Primary blue color */
+    color: white; /* White text */
+    border-radius: 4px; /* Rounded buttons */
+    padding: 6px 12px; /* Button padding */
+}
+
+/* Calendar today highlight */
+.fc-day-today {
+    background-color: #FFECB3; /* Light yellow for today */
+}
+
+/* FullCalendar overall */
+.fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 10px;
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+}

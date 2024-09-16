@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.dashboard {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.dashboard h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.dashboard a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.dashboard a:hover {
+    background-color: #495057;
+}
+
+.container {
+    margin-left: 600px; /* Increase the margin to push the container further away from the navigation */
+    padding: 40px;
+    max-width: 1000px; /* Increase width to accommodate two columns */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* General container styling */
+.booking-history-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 8px;
+
+}
+
+/* Header styling */
+.booking-history-container h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Table styling */
+.booking-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.booking-history-table th,
+.booking-history-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.booking-history-table th {
+    background-color: #007bff; /* Same as booking status table */
+    font-weight: bold;
+    color: #fff; /* White text for contrast */
+}
+
+.booking-history-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.booking-history-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* No bookings message */
+.booking-history-container p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .booking-history-table th,
+    .booking-history-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .booking-history-table thead {
+        display: none;
+    }
+
+    .booking-history-table tr {
+        margin-bottom: 20px;
+        display: block;
+        border: 1px solid #ddd;
+    }
+
+    .booking-history-table td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border: none;
+    }
+
+    .booking-history-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+        color: #007bff;
+    }
+}
+
+/* Styling for the button link (if any in booking history) */
+.view-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Hover state */
+.view-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Active state */
+.view-button:active {
+    background-color: #1e7e34;
+    transform: scale(0.98);
+}
+
+/* Focus state for accessibility */
+.view-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
+}

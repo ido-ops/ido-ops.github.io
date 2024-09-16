@@ -1,0 +1,130 @@
+/* manage_users.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.dashboard a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.dashboard a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td img {
+    max-width: 100px;
+    height: auto;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#editUserModal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px; /* Added rounded corners for a modern look */
+}
+
+#editUserModal form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#editUserModal .form-group {
+    margin-bottom: 15px;
+}
+
+#editUserModal label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#editUserModal input[type="text"], 
+#editUserModal select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#editUserModal button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#editUserModal button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+#editUserModal button[type="button"] {
+    background-color: #dc3545;
+    color: #fff;
+    margin-left: 10px;
+}
+
+#editUserModal button[type="button"]:hover {
+    background-color: #c82333;
+}

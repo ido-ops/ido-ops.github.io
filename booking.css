@@ -1,0 +1,389 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.dashboard {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.dashboard h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.dashboard a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.dashboard a:hover {
+    background-color: #495057;
+}
+
+.container {
+    margin-left: 400px; /* Increase the margin to push the container further away from the navigation */
+    padding: 40px;
+    max-width: 1200px; /* Increase width to accommodate two columns */
+    border-radius: 8px;
+}
+
+.booking-section-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.booking-section h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.car-selection {
+    margin-top: 20px;
+}
+
+.cars-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.car-item {
+    width: 220px;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.car-item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.car-item img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.car-info {
+    padding: 10px;
+}
+
+.car-model {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.car-item.selected {
+    border-color: #007BFF;
+    transform: scale(1.05);
+}
+
+.car-item button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.car-item button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.driver-selection {
+    margin-top: 20px;
+}
+
+.drivers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.driver-item {
+    width: 170px;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.driver-item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+
+.driver-item img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.driver-info {
+    padding: 10px;
+}
+
+.driver-name {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.driver-item.selected {
+    border-color: #007BFF;
+    background-color: #f0f8ff;
+    transform: scale(1.05);
+}
+
+.driver-item.selected p {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+
+.driver-item .rating {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.driver-item .star {
+    color: #FFD700; /* Gold color for stars */
+}
+
+.driver-item .full-star {
+    color: #FFD700;
+}
+
+.driver-item .half-star {
+    color: #FFD700;
+}
+
+.driver-item .empty-star {
+    color: #ddd;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+}
+
+/* Modal Content/Box */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 5% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Increased width for larger modal */
+    max-width: 900px; /* Maximum width */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for a modern look */
+}
+
+/* Modal Image */
+.modal-content img {
+    display: block;
+    margin: 0 auto;
+    width: 100%; /* Ensure the image takes up full width */
+    max-height: 400px; /* Limit height for uniformity */
+    object-fit: cover; /* Ensure uniform size and aspect ratio */
+    border-radius: 10px;
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modalDetails p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#modalDetails p span {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+
+
+
+/* Divider style */
+.divider {
+    text-align: center;
+    font-size: 18px;
+    color: #007BFF;
+    margin: 40px 0;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background-color: #007BFF;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+/* Additional styling for a modern look */
+.car-item, .driver-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-item:hover, .driver-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.star {
+    font-size: 16px;
+    color: gold;
+}
+
+.full-star {
+    color: gold;
+}
+
+.half-star {
+    color: gold;
+}
+
+.empty-star {
+    color: lightgray;
+}

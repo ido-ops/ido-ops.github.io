@@ -1,0 +1,33 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $startDate = $_POST['start-date'];
+    $startTime = $_POST['start-time'];
+    $endDate = $_POST['end-date'];
+    $endTime = $_POST['end-time'];
+
+    
+    // Get today's date
+    $today = date('Y-m-d');
+
+    // Validate start date
+    if ($startDate < $today) {
+        echo "Start date cannot be in the past.";
+        exit();
+    }
+
+    // Validate end date
+    if ($endDate < $startDate) {
+        echo "End date cannot be before start date.";
+        exit();
+    }
+
+    // Combine date and time
+    $startDateTime = $startDate . ' ' . $startTime;
+    $endDateTime = $endDate . ' ' . $endTime;
+
+    // Perform further processing, like saving to the database or checking availability
+
+    // Example message
+    echo "Booking details are valid.";
+}
+?>

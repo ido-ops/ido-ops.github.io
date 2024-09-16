@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.dashboard {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.dashboard h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.dashboard a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.dashboard a:hover {
+    background-color: #495057;
+}
+.container {
+    margin-left: 400px; /* Increase the margin to push the container further away from the navigation */
+    padding: 40px;
+    max-width: 1200px; /* Increase width to accommodate two columns */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
